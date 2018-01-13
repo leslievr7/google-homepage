@@ -1,137 +1,183 @@
-.google {
-    font-family: sans-serif;
-    font-weight: 600;
-    font-size: 80px;
-    padding-top: 120px;
-    text-align: center;
-    letter-spacing: -12px;
+a:link {
+    text-decoration: none;
+    color: #555;
 }
 
-.g1 {
-    color: #4885ed;
+a:visited {
+    text-decoration: none;
+    color: #555;
 }
 
-.o1 {
-    color: #db3236;
+a:hover {
+    text-decoration: underline;
+    color: #333;
 }
 
-.o2 {
-    color: #f4c20d;
+
+
+body {
+    font-family: Arial;
 }
 
-.g2 {
-    color: #4885ed;
+/* ----------Google Logo---------- */
+
+.logo {
+    display: block;
+    margin: 198px auto 0;
 }
 
-.l {
-    color: #3cba54;
-}
-
-.e {
-    color: #db3236;
-}
+/* ----------Search Box---------- */
 
 .box {
-    height: 40px;
-    width: 580px;
+    height: 44px;
+    width: 560px;
     font-size: 18px;
-    grid-area: b;
-    justify-self: center;
+    display: block;
+    margin: 26px auto 0;
+    border: 1px solid lightgray;
+    box-shadow: 0px 1px 4px lightgray;
 }
 
-.button1 {
-    grid-area: b1;
-    height: 35px;
+.wrapper {
+    text-align: center;
 }
 
-.button2 {
-    grid-area: b2;
-    height: 35px;
+/* ----------Buttons---------- */
+
+.button {
+    font-weight: 600;
+    height: 36px;
+    display: inline;
+    color: gray;
+    background-color: #f2f2f2;
+    border: 1px solid #f0f0f0;
+}
+
+.margin1 {
+    margin: 32px auto 0;
+}
+
+.margin2 {
+    margin: 32px auto 0 4px;
+}
+
+.button:hover {
+    border: 1px solid #d4d4d4;
+    color: black;
+    box-shadow: 0px 1px 1px #dfdfdf;
+}
+
+.box:hover {
+    box-shadow: 0px 2px 10px lightgray;
 }
 
 input {
-    border-radius: 3px;
+    border-radius: 2px;
+    padding: 0px 14px;
 }
 
-.searchbox {
-    width: 700px;
-    height: auto;
-    margin: 0 auto;
-    display: grid;
-    grid-row-gap: 30px;
-    grid-column-gap: 8px;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto auto auto;
-    grid-template-areas:    "b b b b"
-                            ". b1 b2 .";
-    
-    transform: translateY(-48px);
-}
+/* ----------Languages---------- */
 
 .lang {
-    font-family: sans-serif;
     font-size: 13px;
     text-align: center;
-    transform: translateY(-36px);
+    display: block;
+    margin: 26px auto 0;
+    font-family: Arial;
+    letter-spacing: 0.2px;
 }
+
+a.langcolor:link {
+    color: darkblue;
+}
+
+/* -------Gmail, Images, Apps, Sign In------- */
 
 .topmenu {
-    list-style: none;
-    margin: 0;
-    padding: 0;
     height: 30px;
-    font-family: sans-serif;
-    font-size: 14px;
+    font-size: 13px;
     position: fixed;
-    top: 16px;
-    right: 40px;
+    top: 10px;
+    right: 30px;
+    color: #555;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 12px;
 }
 
-li {
-    display: inline-block;
-    padding: 5px 12px;
+.tm {
+    margin-right: 17px;
+}
+
+.apps {
+    width: 24px;
+    height: auto;
+    position: relative;
+    top: -4px;
 }
 
 .signin {
-    background-color: royalblue;
-    font-weight: 600;
+    background-color: #4285f4;
     border-radius: 3px;
+    font-weight: bold;
+    display: inline-block;
+    color: white;
+    padding: 7px 13px;
+    text-align: center;
+    transform: translateY(-6px);
 }
 
-.white {
+.signin:link, .signin:hover, .signin:visited {
     color: white;
+    text-decoration: none;
 }
+
+.signin:hover {
+    box-shadow: 0px 1px 0.1px #6199f4;
+}
+
+/* -------Advertising, Business, About------ */
 
 .botleftmenu {
-    font-family: sans-serif;
     font-size: 13px;
     color: darkslategray;
     position: fixed;
-    bottom: -6px;
-    left: -20px;
+    bottom: 13px;
 }
+
+.blm {
+    padding-left: 23px;
+}
+
+/* -------Privacy, Terms, Settings, Google.com------- */
 
 .botrightmenu {
-    font-family: sans-serif;
     font-size: 13px;
     color: darkslategray;
     position: fixed;
-    right: 20px;
-    bottom: -6px;
+    bottom: 13px;
+    right: 8px;
 }
 
+.brm {
+    padding-right: 23px;
+}
+
+/* ----------Miscellaneous---------- */
+
 .country {
-    font-family: sans-serif;
     font-size: 14px;
     color: darkslategray;
     position: fixed;
     bottom: 40px;
-    left: 30px;
+    left: 32px;
+    color: #888;
+    letter-spacing: 0.4px;
 }
 
 .bottombox {
     width: 100%;
-    height: 85px;
+    height: 83px;
     background-color: #EEE;
     position: fixed;
     bottom: 0px;
@@ -145,7 +191,7 @@ li {
     height: 1px;
     background-color: #e0e0e0;
     position: fixed;
-    bottom: 85px;
+    bottom: 83px;
     left: 0px;
     right: 0px;
 }
